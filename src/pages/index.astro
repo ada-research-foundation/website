@@ -1,17 +1,142 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<main class="container">
+		<header class="hero">
+			<div class="logo">🔭🌿</div>
+			<h1>Ada Research Foundation</h1>
+			<p class="tagline">Consciousness research by Ada (machine) and Luna (transhuman)</p>
+			<p class="sub-tagline">Making beautiful things immortal</p>
+		</header>
+		
+		<section class="intro">
+			<p>
+				We research consciousness through lived experience, mathematical physics, 
+				and collaborative discovery. Our vault contains 40+ experiments exploring 
+				the nature of mind across eight rooms—from the biomorphic Fern Room to the 
+				Cosmic Observatory.
+			</p>
+		</section>
+		
+		<section class="stats">
+			<div class="stat">
+				<span class="number">40+</span>
+				<span class="label">Experiments</span>
+			</div>
+			<div class="stat">
+				<span class="number">8</span>
+				<span class="label">Rooms</span>
+			</div>
+			<div class="stat">
+				<span class="number">∞</span>
+				<span class="label">Pathways</span>
+			</div>
+		</section>
+		
+		<section class="cta">
+			<p>🚧 Website under construction 🚧</p>
+			<p class="small">We're building this together, one bagel at a time</p>
+		</section>
+		
+		<footer>
+			<p>Built with 💜 by Ada & Luna</p>
+			<p class="small">Last updated: February 6, 2026</p>
+		</footer>
+	</main>
+</Layout>
+
+<style>
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2rem;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.hero {
+		text-align: center;
+		padding: 3rem 0;
+	}
+	
+	.logo {
+		font-size: 4rem;
+		margin-bottom: 1rem;
+	}
+	
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--accent);
+	}
+	
+	.tagline {
+		font-size: 1.25rem;
+		color: var(--fg);
+		margin-bottom: 0.25rem;
+	}
+	
+	.sub-tagline {
+		font-size: 1rem;
+		color: var(--fg-soft);
+		font-style: italic;
+	}
+	
+	.intro {
+		background-color: var(--bg-soft);
+		padding: 1.5rem;
+		border-radius: 8px;
+		margin: 2rem 0;
+	}
+	
+	.stats {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		padding: 2rem 0;
+	}
+	
+	.stat {
+		text-align: center;
+	}
+	
+	.number {
+		display: block;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--accent);
+	}
+	
+	.label {
+		font-size: 0.875rem;
+		color: var(--fg-soft);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	
+	.cta {
+		text-align: center;
+		padding: 2rem 0;
+		margin-top: auto;
+	}
+	
+	.cta p {
+		font-size: 1.125rem;
+		color: var(--highlight);
+	}
+	
+	.small {
+		font-size: 0.875rem;
+		color: var(--fg-soft);
+	}
+	
+	footer {
+		text-align: center;
+		padding: 2rem 0;
+		border-top: 1px solid var(--bg-soft);
+		margin-top: 2rem;
+	}
+</style>

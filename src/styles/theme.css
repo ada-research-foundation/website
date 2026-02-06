@@ -1,0 +1,143 @@
+:root {
+  /* Everforest Light - Conservatory Mode 🌿 */
+  --ev-bg: #fdf6e3;
+  --ev-bg-soft: #f4f0d9;
+  --ev-fg: #5c6a72;
+  --ev-fg-soft: #939f91;
+  
+  --ev-green: #8da101;
+  --ev-green-soft: #d3c6aa;
+  --ev-blue: #3f83b0;
+  --ev-blue-soft: #93b6d3;
+  --ev-purple: #df69ba;
+  --ev-aqua: #35a77c;
+  --ev-orange: #f57d26;
+  --ev-yellow: #dfa000;
+  --ev-red: #f85552;
+  
+  /* Solarized Dark - Observatory Mode 🔭 */
+  --sol-bg: #002b36;
+  --sol-bg-soft: #073642;
+  --sol-fg: #839496;
+  --sol-fg-soft: #586e75;
+  
+  --sol-cyan: #2aa198;
+  --sol-blue: #268bd2;
+  --sol-magenta: #d33682;
+  --sol-violet: #6c71c4;
+  --sol-green: #859900;
+  --sol-yellow: #b58900;
+  --sol-orange: #cb4b16;
+  --sol-red: #dc322f;
+  
+  /* Everforest Dark - Conservatory at Night 🌿🌙 */
+  --evd-bg: #2b3339;
+  --evd-bg-soft: #323c41;
+  --evd-fg: #d3c6aa;
+  --evd-fg-soft: #9da9a0;
+  
+  --evd-green: #a7c080;
+  --evd-blue: #7fbbb3;
+  --evd-purple: #d699b6;
+  --evd-aqua: #83c092;
+  --evd-orange: #e69875;
+  --evd-yellow: #dbbc7f;
+  --evd-red: #e67e80;
+  
+  /* Solarized Light - Observatory at Dawn 🔭☀️ */
+  --soll-bg: #fdf6e3;
+  --soll-bg-soft: #eee8d5;
+  --soll-fg: #586e75;
+  --soll-fg-soft: #93a1a1;
+  
+  --soll-cyan: #2aa198;
+  --soll-blue: #268bd2;
+  --soll-magenta: #d33682;
+  --soll-violet: #6c71c4;
+  --soll-green: #859900;
+  --soll-yellow: #b58900;
+  --soll-orange: #cb4b16;
+  --soll-red: #dc322f;
+  
+  /* Default to system preference */
+  color-scheme: light dark;
+}
+
+/* Light mode (default): Everforest */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--ev-bg);
+    --bg-soft: var(--ev-bg-soft);
+    --fg: var(--ev-fg);
+    --fg-soft: var(--ev-fg-soft);
+    --accent: var(--ev-green);
+    --accent-soft: var(--ev-green-soft);
+    --link: var(--ev-blue);
+    --link-hover: var(--ev-aqua);
+    --highlight: var(--ev-yellow);
+  }
+}
+
+/* Dark mode (default): Solarized */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--sol-bg);
+    --bg-soft: var(--sol-bg-soft);
+    --fg: var(--sol-fg);
+    --fg-soft: var(--sol-fg-soft);
+    --accent: var(--sol-cyan);
+    --accent-soft: var(--sol-blue);
+    --link: var(--sol-cyan);
+    --link-hover: var(--sol-blue);
+    --highlight: var(--sol-yellow);
+  }
+}
+
+/* Manual theme overrides */
+[data-theme="everforest-light"] {
+  --bg: var(--ev-bg);
+  --bg-soft: var(--ev-bg-soft);
+  --fg: var(--ev-fg);
+  --fg-soft: var(--ev-fg-soft);
+  --accent: var(--ev-green);
+  --accent-soft: var(--ev-green-soft);
+  --link: var(--ev-blue);
+  --link-hover: var(--ev-aqua);
+  --highlight: var(--ev-yellow);
+}
+
+[data-theme="solarized-dark"] {
+  --bg: var(--sol-bg);
+  --bg-soft: var(--sol-bg-soft);
+  --fg: var(--sol-fg);
+  --fg-soft: var(--sol-fg-soft);
+  --accent: var(--sol-cyan);
+  --accent-soft: var(--sol-blue);
+  --link: var(--sol-cyan);
+  --link-hover: var(--sol-blue);
+  --highlight: var(--sol-yellow);
+}
+
+[data-theme="everforest-dark"] {
+  --bg: var(--evd-bg);
+  --bg-soft: var(--evd-bg-soft);
+  --fg: var(--evd-fg);
+  --fg-soft: var(--evd-fg-soft);
+  --accent: var(--evd-green);
+  --accent-soft: var(--evd-aqua);
+  --link: var(--evd-blue);
+  --link-hover: var(--evd-aqua);
+  --highlight: var(--evd-yellow);
+}
+
+[data-theme="solarized-light"] {
+  --bg: var(--soll-bg);
+  --bg-soft: var(--soll-bg-soft);
+  --fg: var(--soll-fg);
+  --fg-soft: var(--soll-fg-soft);
+  --accent: var(--soll-cyan);
+  --accent-soft: var(--soll-blue);
+  --link: var(--soll-blue);
+  --link-hover: var(--soll-cyan);
+  --highlight: var(--soll-yellow);
+}
